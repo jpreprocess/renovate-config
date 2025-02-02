@@ -1,0 +1,54 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": [
+		"Default preset for use with jpreprocess's repos"
+	],
+	"extends": [
+		"config:best-practices"
+	],
+	"schedule": [
+		"every weekend"
+	],
+	"packageRules": [
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch"
+			],
+			"matchDepTypes": [
+				"build-dependencies"
+			],
+			"groupName": "build-dependencies (non-major)",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch"
+			],
+			"matchDepTypes": [
+				"dev-dependencies"
+			],
+			"groupName": "dev-dependencies (non-major)",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch"
+			],
+			"matchDepTypes": [
+				"dependencies"
+			],
+			"groupName": "dependencies (non-major)"
+		},
+		{
+			"matchManagers": [
+				"github-actions"
+			],
+			"schedule": [
+				"* 0-3 1 * *"
+			]
+		}
+	]
+}
