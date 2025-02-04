@@ -16,7 +16,8 @@
 				"patch"
 			],
 			"matchDepTypes": [
-				"build-dependencies"
+				"build-dependencies",
+				"workspace.build-dependencies"
 			],
 			"groupName": "build-dependencies (non-major)",
 			"automerge": true
@@ -27,7 +28,8 @@
 				"patch"
 			],
 			"matchDepTypes": [
-				"dev-dependencies"
+				"dev-dependencies",
+				"workspace.dev-dependencies"
 			],
 			"groupName": "dev-dependencies (non-major)",
 			"automerge": true
@@ -38,7 +40,8 @@
 				"patch"
 			],
 			"matchDepTypes": [
-				"dependencies"
+				"dependencies",
+				"workspace.dependencies"
 			],
 			"groupName": "dependencies (non-major)"
 		},
