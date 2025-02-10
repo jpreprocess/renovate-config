@@ -11,6 +11,7 @@
 	],
 	"packageRules": [
 		{
+			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
 				"minor",
 				"patch"
@@ -23,6 +24,7 @@
 			"automerge": true
 		},
 		{
+			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
 				"minor",
 				"patch"
@@ -35,6 +37,7 @@
 			"automerge": true
 		},
 		{
+			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
 				"minor",
 				"patch"
