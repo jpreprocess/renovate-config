@@ -13,7 +13,17 @@
 		{
 			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
-				"minor",
+				"minor"
+			],
+			"matchDepTypes": [
+				"build-dependencies",
+				"workspace.build-dependencies"
+			],
+			"groupName": "build-dependencies (non-major)",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
 				"patch"
 			],
 			"matchDepTypes": [
@@ -26,7 +36,17 @@
 		{
 			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
-				"minor",
+				"minor"
+			],
+			"matchDepTypes": [
+				"dev-dependencies",
+				"workspace.dev-dependencies"
+			],
+			"groupName": "dev-dependencies (non-major)",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
 				"patch"
 			],
 			"matchDepTypes": [
@@ -39,7 +59,16 @@
 		{
 			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
-				"minor",
+				"minor"
+			],
+			"matchDepTypes": [
+				"dependencies",
+				"workspace.dependencies"
+			],
+			"groupName": "dependencies (non-major)"
+		},
+		{
+			"matchUpdateTypes": [
 				"patch"
 			],
 			"matchDepTypes": [
