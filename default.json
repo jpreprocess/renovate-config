@@ -11,6 +11,13 @@
 	],
 	"packageRules": [
 		{
+			"matchFileNames": [
+				".github/actions/**",
+				".github/workflows/**"
+			],
+			"semanticCommitType": "ci"
+		},
+		{
 			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
 				"minor"
