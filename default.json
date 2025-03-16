@@ -18,6 +18,15 @@
 			"semanticCommitType": "ci"
 		},
 		{
+			"matchDepTypes": [
+				"dependencies",
+				"workspace.dependencies",
+				"require"
+			],
+			"semanticCommitType": "deps",
+			"semanticCommitScope": null
+		},
+		{
 			"matchCurrentVersion": "!/^0/",
 			"matchUpdateTypes": [
 				"minor"
